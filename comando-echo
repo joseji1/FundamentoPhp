@@ -1,5 +1,6 @@
 
 <?php
+
 /*Estructura correspondiente al comando echo en php,con este comando imprimimos el contenido sobre la parte visible 
 de nuestra web*/
 //$texto="Soy un texto dentro de una variable";
