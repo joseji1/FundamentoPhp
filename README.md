@@ -1,2 +1,2 @@
 # FundamentoPhp
-Instrucciones fundamentales de la programación en PHP.
+JoseGarcia-Instrucciones fundamentales de la programación en PHP.
