@@ -1,0 +1,31 @@
+<?php 
+/*Control foreach
+con el control foreach recorreremos uno a uno los índices contenidos 
+dentro de una matriz.En un principio recorreremos la matriz y guardaremos 
+todos sus índices en una variable para poder posteriormente utilizar la información de cada indize.
+*/
+
+$matriz = array(“coche”,”casa”,”moto”);
+foreach($matriz as $valor){
+	echo $valor .”<br>”;
+}
+
+/* Al inicio creamos la matriz con un array,este array contendrá 3 índices (“coche”,”casa”,”moto”),
+inicializamos el bucle de control foreach donde en los parámetros ponemos primeramente el 
+nombre de la matriz que recorrerá ( $matriz) posteriormente le decimos con ( as ) 
+que guarde todo los índices de la matriz dentro de la variable ( $valor),
+esta variable $valor la hemos creado al instante y dentro del control foreach 
+para utilizarla en el mismo foreach;Una vez recogida y guardada la información se ejecutara 
+el bloque de código {} para el ejemplo un ( echo $valor) que contendrá cada nombre de la matriz.
+El bucle se ejecutará tantas veces como índices existentes dentro de la matriz y por cada itineracion 
+que ejecute el bloque de codigo echo 
+imprimirá un índice diferente,mostrando en pantalla cada uno de los nombres de los índices,separados 
+por un salto <br>.
+coche
+casa
+moto
+si tuviéramos más valores dentro de la matriz el bucle foreach seguirá ejecutándose hasta listar todos los índices contenidos*/
+
+
+
+?>
