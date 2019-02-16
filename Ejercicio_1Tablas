@@ -1,0 +1,33 @@
+<?php 
+/* Este ejercicio fue realizado por JoseGarcia. 
+con este ejercicio crearemos 2 tablas (arrays) vacías donde por medio de un bucle for 
+añadiremos su contenido numérico,posteriormente crearemos una tercera tabla(array) 
+donde realizara la operación de suma de los valores contenidos en la tabla1 y la tabla2,
+con la tercera creación de un bucle for para mostrar los resultados de la suma en pantalla. 
+En cada bucle imprimiremos en pantalla por medio de un echo los resultados de cada uno seguidos por un salto de linea <br/>,
+también separaremos los bucles con una linea de html <hr> y pondremos un titulo html h3 con el titulo 
+"Suma de la primera tabla con la segunda tabla. */
+$tabla1 = array(); // Creacion de la primera tabla vacia
+$tabla2 = array(); // creacion de la seqgunada tabla vacia
+$tablaSuma = array(); // creacion de la tabla para sumar los resultados
+for($i=1;$i<=10;$i++){ // crecion del bucle for para crear tablas del 1 al 10
+	$tabla1[$i]=$i;
+	echo "Tabla1-".$tabla1[$i] . "<br/>";
+}
+echo "<hr>";
+for($i=1;$i<=10;$i++){ // creacion del bucle for para crear tabla del 11 al 20
+	$tabla2[$i]=$i+10;
+	echo "Tabla2-".$tabla2[$i] . "<br/>";
+}
+echo "<hr>";
+for($i=1;$i<=10;$i++){ // creacion del bucle for para crear tabla con resultado de la suma entre la tabla1 y la tabla2
+	$tablaSuma[$i]=$tabla1[$i]+$tabla2[$i];
+}
+echo "<hr>";
+echo "<h3>Suma de la primera tabla con la segunda tabla </h3>";
+for($i=1;$i<=10;$i++){ //bucle for para mostrar resultados de la tabla (array) con los resultados de la suma.
+	echo $tablaSuma[$i]	. "<br/>";
+}
+
+
+?>
